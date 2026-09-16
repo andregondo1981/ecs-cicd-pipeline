@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps & Cloud Engineer Resume</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #0284c7;
+            --text: #334155;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: #fff;
+            line-height: 1.4;
+            font-size: 13.5px;
+        }
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 12px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .header-left h1 {
+            font-size: 24px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            margin-bottom: 3px;
+        }
+        .header-left h2 {
+            font-size: 14px;
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .header-right {
+            text-align: right;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .header-right a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 12px;
+        }
+        h3 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+        .summary {
+            font-size: 13px;
+            color: #475569;
+            margin-bottom: 12px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            font-size: 12px;
+        }
+        .skill-category {
+            background: var(--light);
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+        .skill-category strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 2px;
+        }
+        .job {
+            margin-bottom: 10px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 13.5px;
+            color: var(--primary);
+        }
+        .job-subheader {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+        ul {
+            margin-left: 16px;
+            font-size: 12.5px;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        .education-certs {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12.5px;
+        }
+        @media print {
+            body {
+                font-size: 12px;
+            }
+            .page {
+                padding: 10px;
+                max-width: 100%;
+            }
+            section {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <h1>Andre Gondo</h1>
+            <h2>Senior DevOps & Cloud Engineer</h2>
+        </div>
+        <div class="header-right">
+            Canton, MI (Open to Remote) | +1 (313) 510-5714<br>
+            <a href="mailto:andre.gondo@stephitim.space">andre.gondo@stephitim.space</a> | 
+            <a href="https://github.com" target="_blank">github.com/andregondo</a>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+        <h3>Professional Summary</h3>
+        <p class="summary">
+            Results-driven DevOps & Cloud Infrastructure Engineer with over 6 years of experience designing, automating, and scaling production-grade architectures on AWS. Specialized in Infrastructure as Code (Terraform), container orchestration (Docker, ECS Fargate), CI/CD pipeline optimization, and automated security hardening. Proven track record of reducing deployment overhead and optimizing high-availability systems.
+        </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+        <h3>Technical Expertise</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Cloud & Infrastructure</strong>
+                AWS (VPC, ECS, EC2, ALB, Route53, CloudFront, ACM, IAM), Multi-AZ Architectures
+            </div>
+            <div class="skill-category">
+                <strong>IaC & Automation</strong>
+                Terraform, Terragrunt, AWS CloudFormation, Bash Scripting, Python
+            </div>
+            <div class="skill-category">
+                <strong>Containers & CI/CD</strong>
+                Docker, ECS Fargate, GitHub Actions, GitLab CI, Jenkins, ArgoCD
+            </div>
+            <div class="skill-category">
+                <strong>Security & Monitoring</strong>
+                IAM Policies, Security Groups, OWASP Compliance, CloudWatch, Prometheus, Grafana
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+        <h3>Professional Experience</h3>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Senior Cloud / DevOps Engineer</span>
+                <span>2023 – Present</span>
+            </div>
+            <div class="job-subheader">
+                <span>Apex Cloud Solutions</span>
+                <span>Remote / San Francisco, CA</span>
+            </div>
+            <ul>
+                <li>Architected and managed modular AWS infrastructure handling microservices via Terraform, optimizing cost and multi-environment consistency (Dev, Staging, Prod).</li>
+                <li>Deployed scalable containerized applications using Amazon ECS Fargate paired with Application Load Balancers, Target Groups, and dynamic Application Auto-Scaling policies based on CPU and traffic utilization.</li>
+                <li>Implemented strict security boundaries utilizing custom Security Groups, least-privilege IAM roles, and automated SSL certificate provisioning via ACM and Route 53 DNS records.</li>
+                <li>Streamlined CI/CD automation pipelines using GitHub Actions, enabling zero-downtime rolling deployments and lowering deployment times by 45%.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>DevOps Engineer</span>
+                <span>2020 – 2023</span>
+            </div>
+            <div class="job-subheader">
+                <span>Nexus Tech Infrastructure</span>
+                <span>San Jose, CA</span>
+            </div>
+            <ul>
+                <li>Migrated legacy monolithic applications to containerized microservices running in Docker on EC2 and ECS environments.</li>
+                <li>Created automated provisioning frameworks for AWS Virtual Private Clouds (VPCs), public/private subnets, internet gateways, and NAT gateways.</li>
+                <li>Integrated monitoring and logging stacks with CloudWatch and Prometheus to track application health, resource bottlenecks, and system anomalies.</li>
+                <li>Collaborated closely with software and security engineering teams to build vulnerability scanning steps into continuous deployment lifecycles.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span>Junior Systems Engineer</span>
+                <span>2018 – 2020</span>
+            </div>
+            <div class="job-subheader">
+                <span>Veridian Enterprise Systems</span>
+                <span>Oakland, CA</span>
+            </div>
+            <ul>
+                <li>Administered Linux server fleets (Amazon Linux 2023 / Ubuntu), managing patching, SSH access hardening, and systemd service logs.</li>
+                <li>Assisted senior engineers in writing configuration management scripts and maintaining source control repositories on GitHub.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section>
+        <h3>Education & Certifications</h3>
+        <div class="education-certs">
+            <div>
+                <strong>B.S. in Computer Science</strong> — California State University (2018)
+            </div>
+            <div>
+                <strong>AWS Certified DevOps Engineer – Professional</strong> (Valid through 2027)
+            </div>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
