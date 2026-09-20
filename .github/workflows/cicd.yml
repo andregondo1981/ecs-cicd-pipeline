@@ -63,4 +63,4 @@ jobs:
             --cluster nginx-cluster \
            --service nginx-demo-service \
            --force-new-deployment
-
+           ----region ${{ vars.AWS_REGION }}
