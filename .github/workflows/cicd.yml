@@ -61,8 +61,6 @@ jobs:
         run: |
           aws ecs update-service \
             --cluster nginx-cluster \
-            --service <your-service-name> \
-            --force-new-deployment
            --service nginx-demo-service \
            --force-new-deployment
 
