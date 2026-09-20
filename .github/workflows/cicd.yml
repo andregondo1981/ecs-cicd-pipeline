@@ -60,7 +60,7 @@ jobs:
       - name: Update ECS Service
         run: |
           aws ecs update-service \
-            --cluster nginx-cluster \
-            --service nginx-service \
+            --cluster nginx-demo-cluster \
+            --service nginx-demo-service \
             --force-new-deployment \
             --region ${{ vars.AWS_REGION }}
