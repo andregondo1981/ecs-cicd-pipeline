@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume - DevOps Cloud Engineer</title>
+<style>
+  @page { size: A4; margin: 0.5in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.4in 0.6in;
+    color: #1a1a1a;
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+  header { text-align: center; margin-bottom: 10px; }
+  h1 { margin: 0; font-size: 22pt; letter-spacing: 1px; color: #0b3d5c; }
+  .title { font-size: 11.5pt; color: #444; margin-top: 2px; font-weight: 600; }
+  .contact { font-size: 9.5pt; color: #333; margin-top: 6px; }
+  .contact span { margin: 0 8px; }
+  h2 {
+    font-size: 11.5pt;
+    color: #0b3d5c;
+    border-bottom: 2px solid #0b3d5c;
+    padding-bottom: 2px;
+    margin: 14px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .summary { margin: 0; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 10px;
+    font-size: 10pt;
+  }
+  .skills-grid .cat { font-weight: 700; color: #0b3d5c; white-space: nowrap; }
+  .job { margin-bottom: 10px; }
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 10.5pt;
+  }
+  .job-sub {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: #555;
+    font-size: 9.8pt;
+    margin-bottom: 3px;
+  }
+  ul { margin: 2px 0 0; padding-left: 18px; }
+  li { margin-bottom: 2px; }
+  .edu-item, .cert-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 10pt;
+  }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+  @media print {
+    body { padding: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ADEYINKA ODERINDE</h1>
+  <div class="title">DevOps / Cloud Engineer</div>
+  <div class="contact">
+    <span>adeyinkaoderinde@gmail.com</span>|
+    <span>+1 (555) 123-4567</span>|
+    <span>Scotland, United Kingdom (Remote-ready)</span>|
+    <span>linkedin.com/in/yourprofile</span>|
+    <span>github.com/yourhandle</span>
+  </div>
+</header>
+
+<h2>Summary</h2>
+<p class="summary">
+DevOps/Cloud Engineer with 6 years of experience designing, automating, and scaling cloud infrastructure on AWS.
+Specialized in building CI/CD pipelines for containerized workloads on ECS/EKS, Infrastructure as Code with
+Terraform, and observability for production systems. Proven record of cutting deployment times, reducing
+infrastructure costs, and improving system reliability through automation-first practices.
+</p>
+
+<h2>Core Skills</h2>
+<div class="skills-grid">
+  <div class="cat">Cloud Platforms</div><div>AWS (ECS, EKS, EC2, S3, RDS, Lambda, VPC, IAM, CloudFront, Route 53), Azure (basic), GCP (basic)</div>
+  <div class="cat">CI/CD</div><div>GitHub Actions, GitLab CI, Jenkins, AWS CodePipeline/CodeBuild/CodeDeploy, ArgoCD</div>
+  <div class="cat">IaC & Config</div><div>Terraform, CloudFormation, Ansible, AWS CDK</div>
+  <div class="cat">Containers</div><div>Docker, Kubernetes (EKS), Amazon ECS/Fargate, Helm</div>
+  <div class="cat">Monitoring</div><div>CloudWatch, Prometheus, Grafana, Datadog, ELK Stack</div>
+  <div class="cat">Scripting</div><div>Bash, Python, PowerShell, YAML</div>
+  <div class="cat">Practices</div><div>Blue/Green & Canary Deployments, GitOps, Secrets Management, Cost Optimization, Zero-downtime Releases</div>
+</div>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-header"><span>Senior DevOps Engineer — TechCorp Solutions</span><span>2023 – Present</span></div>
+  <div class="job-sub"><span>Remote</span></div>
+  <ul>
+    <li>Architected and maintained multi-stage CI/CD pipelines deploying containerized microservices to Amazon ECS (Fargate), cutting deployment time from 45 to 8 minutes.</li>
+    <li>Led migration of legacy EC2 workloads to ECS with blue/green deployments, reducing production incidents by 40%.</li>
+    <li>Standardized infrastructure provisioning using Terraform modules across 5 AWS accounts, improving environment parity and reducing provisioning time by 70%.</li>
+    <li>Implemented centralized observability (CloudWatch, Grafana, Prometheus) reducing mean time to detection (MTTD) by 55%.</li>
+    <li>Mentored 3 junior engineers on IaC and CI/CD best practices.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header"><span>DevOps Engineer — CloudNine Systems</span><span>2021 – 2023</span></div>
+  <div class="job-sub"><span>Lagos, Nigeria</span></div>
+  <ul>
+    <li>Built and maintained GitHub Actions/Jenkins pipelines for 15+ microservices, enabling automated build, test, and deploy workflows.</li>
+    <li>Containerized legacy monolith applications with Docker and orchestrated deployments via Kubernetes (EKS).</li>
+    <li>Automated infrastructure provisioning with Terraform and Ansible, reducing manual configuration errors by 60%.</li>
+    <li>Designed autoscaling and cost-optimization strategies, reducing monthly AWS spend by 25%.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-header"><span>Cloud/Systems Engineer — DataStream Africa</span><span>2019 – 2021</span></div>
+  <div class="job-sub"><span>Lagos, Nigeria</span></div>
+  <ul>
+    <li>Supported AWS infrastructure operations including EC2, S3, RDS, and VPC networking for client applications.</li>
+    <li>Wrote Bash and Python automation scripts for backups, log rotation, and deployment tasks.</li>
+    <li>Assisted in setting up initial CI pipelines and monitoring dashboards, improving release cadence and visibility.</li>
+  </ul>
+</div>
+
+<h2>Education & Certifications</h2>
+<div class="two-col">
+  <div>
+    <div class="edu-item"><span><strong>B.Sc. Computer Science</strong></span><span>2019</span></div>
+    <div style="color:#555; font-size:9.5pt; margin-bottom:6px;">Glasgow Caledonian University</div>
+  </div>
+  <div>
+    <div class="cert-item"><span>AWS Certified DevOps Engineer – Professional</span></div>
+    <div class="cert-item"><span>AWS Certified Solutions Architect – Associate</span></div>
+    <div class="cert-item"><span>Certified Kubernetes Administrator (CKA)</span></div>
+    <div class="cert-item"><span>HashiCorp Certified: Terraform Associate</span></div>
+  </div>
+</div>
+
+</body>
+</html>
