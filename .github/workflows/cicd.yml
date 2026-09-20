@@ -47,20 +47,22 @@ jobs:
          docker push ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
 
  deploy:
-   needs: build
-   runs-on: ubuntu-latest
+    needs: build
+    runs-on: ubuntu-latest
 
-   steps:
-     - name: Configure AWS Credentials
-       uses: aws-actions/configure-aws-credentials@v4
-       with:
-         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
-         aws-region: ${{ vars.AWS_REGION }}
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
 
-     - name: Update ECS Service
-       run: |
-         aws ecs update-service \
-           --cluster nginx-demo-cluster \
+      - name: Update ECS Service
+        run: |
+          aws ecs update-service \
+            --cluster nginx-cluster \
+            --service <your-service-name> \
+            --force-new-deployment
            --service nginx-demo-service \
            --force-new-deployment
 
